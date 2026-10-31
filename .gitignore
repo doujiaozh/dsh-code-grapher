@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Plugin working dir (generated artifacts)
+.code-graph/
+.cg-cache/
+
+# Env / secrets
+.env
+.env.local
+*.local
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test fixtures output
+examples/demo/.code-graph/

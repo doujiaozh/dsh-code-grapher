@@ -1,0 +1,40 @@
+{
+  "name": "dsh-code-grapher",
+  "version": "1.0.0",
+  "description": "Understand-Anything style code knowledge grapher for DeepSeek Harness: scan, AST-lite extraction, LLM semantic analysis and interactive D3 graph rendering. Zero native dependencies (Win7 safe).",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "cg": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "code-graph",
+    "knowledge-graph",
+    "ast",
+    "llm",
+    "deepseek",
+    "intern-inkstone",
+    "dsh",
+    "code-comprehension"
+  ],
+  "license": "MIT",
+  "author": "DSH Agent <dsh@example.local>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/dsh-code-grapher.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "5.4.5"
+  }
+}
